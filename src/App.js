@@ -11,8 +11,6 @@ function App() {
   const [userInfo, setUserInfo] = useState();
   const onSubmit = (data) => {
     setUserInfo(data);
-    console.log(data);
-    console.log(errors);
   };
 
   return (
