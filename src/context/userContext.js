@@ -1,4 +1,4 @@
-import { useState, createContext, useContext } from "react";
+import { createContext, useState, useContext } from "react";
 
 export const userContext = createContext({
   user: null,
@@ -14,7 +14,6 @@ export function UserContextProvider({ children }) {
   function logIn(username) {
     setUser({ isGuestUser: false, name: username });
   }
-
   function logOut() {
     setUser(USER);
   }
@@ -28,6 +27,5 @@ export function UserContextProvider({ children }) {
 
 export function useUserContext() {
   const { user, logIn, logOut } = useContext(userContext);
-
   return { user, logIn, logOut };
 }

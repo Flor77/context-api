@@ -4,16 +4,16 @@ import "../App.css";
 import { useUserContext } from "../context/userContext";
 
 const LoginForm = () => {
+  const [userInfo, setUserInfo] = useState();
+  const { logIn, logOut } = useUserContext();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const { logIn } = useUserContext();
-  const [userInfo, setUserInfo] = useState();
   const onSubmit = (data) => {
-    logIn(data.username);
     setUserInfo(data);
+    logIn(data.username);
     console.log(data);
   };
 
