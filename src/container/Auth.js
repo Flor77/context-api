@@ -1,11 +1,10 @@
 import React from "react";
-import LoginForm from "./LoginForm";
 import Home from "./Home";
-import { useUserContext } from "../context/userContext";
+import LoginForm from "./LoginForm";
 
 const Auth = () => {
-  const { user } = useUserContext();
-  return <>{user.isGuestUser ? <LoginForm /> : <Home />}</>;
+  const user = "false";
+  return <>{user ? <Home /> : <LoginForm />}</>;
 };
 
 export default Auth;
