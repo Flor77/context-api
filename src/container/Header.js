@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="wrapper">
-        <h1 className="logo">ReactContextApi</h1>
+        <h1 className="logo">App</h1>
         <div className="links">
           <ul>
             <li>
@@ -21,10 +21,10 @@ const Header = () => {
               <a href="/support">Support</a>
             </li>
             <li>
-              <a href="/platforms">Platforms</a>
+              <a href="/props">Props</a>
             </li>
             <li>
-              <a href="/pricing">Pricing</a>
+              <a href="/create-context">Create-Context</a>
             </li>
           </ul>
         </div>
@@ -49,10 +49,10 @@ const Header = () => {
             <a href="/support">Support</a>
           </li>
           <li>
-            <a href="/platforms">Platforms</a>
+            <a href="/props">Props</a>
           </li>
           <li>
-            <a href="/pricing">Pricing</a>
+            <a href="/create-context">Create-Context</a>
           </li>
         </ul>
         <div className="flex-col">
