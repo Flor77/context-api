@@ -1,18 +1,63 @@
-import { useUserContext } from "../context/userContext";
+import React, { useState } from "react";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const Header = () => {
-  const { user, logOut } = useUserContext();
+  const [header, setHeader] = useState(false);
+  const handleClick = () => setHeader(!header);
+
   return (
-    <div className="ui fixed menu">
-      <div className="ui center">
-        <h2>ReactContextApi</h2>
-        <div className="profile">
-          <h3>Welcome, {user.name}</h3>
-          {!user.isGuestUser && (
-            <button onClick={logOut} className="ui button blue">
-              LogOut
-            </button>
-          )}
+    <div className="header">
+      <div className="wrapper">
+        <h1 className="logo">ReactContextApi</h1>
+        <div className="links">
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/support">Support</a>
+            </li>
+            <li>
+              <a href="/platforms">Platforms</a>
+            </li>
+            <li>
+              <a href="/pricing">Pricing</a>
+            </li>
+          </ul>
+        </div>
+        <div className="flex">
+          <button className="primary-button">Sign In</button>
+          <button className="secondary-button">Sign Up</button>
+        </div>
+        <div className="menu-icon" onClick={handleClick}>
+          {!header ? <MenuIcon className="icon" /> : <XIcon className="icon" />}
+        </div>
+      </div>
+
+      <div className={!header ? "hidden" : "dropdown-menu"}>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/support">Support</a>
+          </li>
+          <li>
+            <a href="/platforms">Platforms</a>
+          </li>
+          <li>
+            <a href="/pricing">Pricing</a>
+          </li>
+        </ul>
+        <div className="flex-col">
+          <button className="primary-button">Sign In</button>
+          <button className="secondary-button">Sign Up</button>
         </div>
       </div>
     </div>
