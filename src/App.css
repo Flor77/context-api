@@ -194,6 +194,11 @@ body {
   margin-top: 80px;
 }
 
+.platforms p {
+  max-width: 520px;
+  /* padding: 0 100px; */
+}
+
 .wrapper-app {
   max-width: 520px;
   width: 100%;
@@ -202,13 +207,20 @@ body {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   align-items: center;
   border: 1px solid gray;
 }
 
 .line {
   width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 @media (max-width: 768px) {
