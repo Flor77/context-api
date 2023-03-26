@@ -3,7 +3,7 @@ import Header from "./container/Header";
 import Home from "./container/Home";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import About from "./container/About";
-import Support from "./container/Support";
+import CustomHook from "./container/CustomHook";
 import Props from "./container/Props";
 import CreateContext from "./container/CreateContext";
 
@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/support" element={<Support />} />
+        <Route path="/custom-hook" element={<CustomHook />} />
         <Route path="/props" element={<Props />} />
         <Route path="/create-context" element={<CreateContext />} />
       </Routes>

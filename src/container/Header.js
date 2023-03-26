@@ -18,7 +18,7 @@ const Header = () => {
               <a href="/about">About</a>
             </li>
             <li>
-              <a href="/support">Support</a>
+              <a href="/custom-hook">CustomHook</a>
             </li>
             <li>
               <a href="/props">Props</a>
@@ -46,7 +46,7 @@ const Header = () => {
             <a href="/about">About</a>
           </li>
           <li>
-            <a href="/support">Support</a>
+            <a href="/custom-hook">CustomHook</a>
           </li>
           <li>
             <a href="/props">Props</a>

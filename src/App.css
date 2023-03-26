@@ -85,15 +85,15 @@ body {
 }
 
 .primary-button:hover {
-  background: #03335c !important;
-  color: #fff;
+  background: #f5efef !important;
+  color: #0563b4;
+  transition: ease-in-out 0.1s;
 }
 
 .secondary-button:hover {
-  background: #fff !important;
-  color: #03335c;
-  border: 1px solid #0563b4;
-  transition: ease-in-out 0.5s;
+  background: #03335c !important;
+  color: #fff;
+  transition: ease-in-out 0.1s;
 }
 
 .icon {
