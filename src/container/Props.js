@@ -16,6 +16,11 @@ const Props = () => {
 
   return (
     <div className="platforms flex-col">
+      <p>
+        This is about props. How we can use props to manage state of our
+        application and solve the problem of props drilling in React. How we can
+        create context and than providing the context to child components.
+      </p>
       <div className="wrapper-app">
         <h3>App Component</h3>
         <h2>{counter}</h2>
