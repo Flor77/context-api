@@ -15,7 +15,7 @@ const Header = () => {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/about">About</a>
+              <a href="/use-effect">UseEffectHook</a>
             </li>
             <li>
               <a href="/custom-hook">CustomHook</a>
@@ -43,7 +43,7 @@ const Header = () => {
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/about">About</a>
+            <a href="/use-effect">UseEffectHook</a>
           </li>
           <li>
             <a href="/custom-hook">CustomHook</a>
