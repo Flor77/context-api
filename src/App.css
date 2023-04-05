@@ -214,7 +214,7 @@ body {
   gap: 5px;
   align-items: center;
   border: 1px solid gray;
-  height: 50%;
+  /* height: 50%; */
 }
 
 .line {
